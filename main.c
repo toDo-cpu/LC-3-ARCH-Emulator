@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <errno.h>
-#include "src/helpers.h"
-#include "src/memory.h"
-#include "src/constants.h"
-#include "src/log.h"
+#include "includes/helpers.h"
+#include "includes/memory.h"
+#include "includes/constants.h"
+#include "includes/log.h"
 
 /*
 There is 3 types of registers in the LC-3:
@@ -82,7 +82,7 @@ void update_flags(uint16_t r) {
 
 
 /*
-    STI SR, LABEL
+    
 */
 int instruction_sti(uint16_t instr)
 {
