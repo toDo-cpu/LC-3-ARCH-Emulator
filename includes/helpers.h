@@ -20,7 +20,7 @@
 #define GET_PCOFFSET9(instr)    (instr & PCOFFSET9_MASK)
 #define GET_PCOFFSET11(instr)   (instr & PCOFFSET11_MASK)
 
-
+#define LUL 0x10
 #define IS_BR_N_SET(instr)      ((instr >> 9) & (0x1 << 0x2))
 #define IS_BR_Z_SET(instr)      ((instr >> 9) & (0x1 << 0x1))
 #define IS_BR_P_SET(instr)      ((instr >> 9) & 0x1)
