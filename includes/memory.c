@@ -1,7 +1,8 @@
 #include <stdint.h>
+#include "constants.h"
 
 /* Registers are 16 bits length so there is 2^16 address */
-uint16_t memory[UINT16_MAX];
+uint16_t memory[MEM_SIZE];
 
 uint16_t write_mem(uint16_t address, uint16_t content)
 {
